@@ -61,22 +61,22 @@ namespace Assets.Scripts
         /// </summary>
         private void _inputCheck()
         {
-            if (Input.GetKeyUp(KeyCode.LeftArrow) && MotionVector != new Vector2(0, 1)&& _wasMove)
+            if (Input.GetKeyDown(KeyCode.LeftArrow) && MotionVector != new Vector2(0, 1)&& _wasMove)
             {
                 MotionVector = new Vector2(0, -1);
                 _wasMove = false;
             }
-            if (Input.GetKeyUp(KeyCode.RightArrow) && MotionVector != new Vector2(0, -1) && _wasMove)
+            if (Input.GetKeyDown(KeyCode.RightArrow) && MotionVector != new Vector2(0, -1) && _wasMove)
             {
                 MotionVector = new Vector2(0, 1);
                 _wasMove = false;
             }
-            if (Input.GetKeyUp(KeyCode.UpArrow) && MotionVector != new Vector2(-1, 0) && _wasMove)
+            if (Input.GetKeyDown(KeyCode.UpArrow) && MotionVector != new Vector2(-1, 0) && _wasMove)
             {
                 MotionVector = new Vector2(1, 0);
                 _wasMove = false;
             }
-            if (Input.GetKeyUp(KeyCode.DownArrow) && MotionVector != new Vector2(1, 0) && _wasMove)
+            if (Input.GetKeyDown(KeyCode.DownArrow) && MotionVector != new Vector2(1, 0) && _wasMove)
             {
                 MotionVector = new Vector2(-1, 0);
                 _wasMove = false;
